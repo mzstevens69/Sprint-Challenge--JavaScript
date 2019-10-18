@@ -95,26 +95,20 @@ The resulting contact information strings should have a space between the first 
 Log the result of your new array. */
 const contactInfo = [];
 
-for(let i = 0; i < graduates.length; i++){
-  if(!contactInfo.includes(graduates[i].first_name),(graduates[i].email)){
-    contactInfo.push(graduates[i].first_name),(graduates[i].email);
-    //  if(!contactInfo.includes(graduates[i].email)){
-    contactInfo.push(graduates[i].email);
-  
-     }
-    }  
+for(const i in graduates) {
+  const grad = graduates[i];
+  const arrayOfStrings = `${grad.first_name} ${grad.email}`;
+  contactInfo.push(arrayOfStrings);
+     
+ };
 
 
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
+//var arraycontainsturtles = (myarr.indexOf("turtles") > -1);
 const unisWithUni = [];
-for (let i = 0; i < graduates.length; i++) {
-  if (graduates[i].universities === "Uni") {
-   unisWithUni.push(universities[i]);
-    }
-  };
-
+ 
 
 console.log(unisWithUni);
 
