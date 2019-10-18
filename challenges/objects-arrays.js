@@ -109,6 +109,11 @@ console.log(contactInfo);
 //var arraycontainsturtles = (myarr.indexOf("turtles") > -1);
 const unisWithUni = [];
  
+for(grad in graduates) {
+  if(graduates[grad].university.match('Uni')) {
+    unisWithUni.push(graduates[grad].university);
+  }
+}
 
 console.log(unisWithUni);
 
